@@ -7,8 +7,8 @@ public class Block : MonoBehaviour
 {
 
     //Marcador
-    public TextMeshProUGUI ScoreText;
-    int score;
+    public GameManager referencia;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -33,9 +33,9 @@ public class Block : MonoBehaviour
             Destroy(this.gameObject);
 
             //suma
-            score++;
+            referencia.Puntos+=5;
 
-            ScoreText.text = score.ToString();
+            referencia.Score.text = referencia.Puntos.ToString();
         }
     }
 }

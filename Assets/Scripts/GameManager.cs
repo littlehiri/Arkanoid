@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI gameOver, gameWin;
 
     public TextMeshProUGUI Score;
+    public int Puntos;
 
     //Empezamos el juego teniendo 3 vidas
     public int lives = 3;
@@ -42,6 +43,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         //Si pulsamos la tecla escape salimos del juego
         if (Input.GetKeyDown(KeyCode.Escape))
         {
